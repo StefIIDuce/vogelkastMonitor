@@ -19,7 +19,7 @@ Pick the one with desktop and recommended software. This may take a few minutes.
 Then download the code in Code tab as zip file.
 Unzip it after download.
 
-Insert the SD card into the PC's SD card port and open the balenaEtcher app.
+Insert the micro SD card into the PC's SD card port and open the balenaEtcher app.
 We're going to flash the raspbian os onto the SD card. Make sure the SD card and os
 are selected, then Flash.
 Now remove and re-insert the SD card.
