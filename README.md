@@ -7,7 +7,7 @@ setup is complete and only the software installation is left.
 For more information regarding the installation and build of systems software
 and hardware components consult the Wiki tab above.
 
-The main <> Code tab contains only 1 one folder and two files.
+The main Code tab above contains only 1 one folder and two files.
 The folder contains the installation script, configuration files, main programmes
 and necessary libraries.
 The two files are for the RPi os.
@@ -15,7 +15,7 @@ The two files are for the RPi os.
 The first thing that must be done is downloading the raspbian os from the following link:
 https://www.raspberrypi.org/downloads/raspberry-pi-os/
 Pick the one with desktop and recommended software. This may take a few minutes.
-Then download the code in <> Code tab as zip file.
+Then download the code in Code tab as zip file.
 Unzip it after download.
 
 Insert the SD card into the PC's SD card port and open the balenaEtcher app.
