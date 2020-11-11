@@ -25,7 +25,8 @@ Now remove and re-insert the SD card.
 Open the wpa_supplicant.conf file and edit the contents of ssid and psk with the name
 and password of you're wifi network. Also change the value of country to match the 
 ISO 3166 alpha-2 country code of your country if necessary. When done save.
-If the country code had to be changed edit the hostapd.conf file's country_code line to match.
+If the country code had to be changed edit inside the Vogelkast folder the hostapd.conf
+file's country_code line to match.
 This one isn't required but for extra security edit the wpa_passphrase in hostapd.conf
 and change the password to you're liking, if not the default password is Anno20202021.
 
@@ -64,4 +65,4 @@ Save and close the file.
 Finally reboot with:
 sudo systemctl reboot
 
-With this the installation is complete, have fun recording.
+With this the installation is complete, have fun.
