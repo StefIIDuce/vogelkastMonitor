@@ -19,7 +19,7 @@ Then download the code in <> Code tab as zip file.
 Unzip it after download.
 
 Insert the SD card into the PC's SD card port and open the balenaEtcher app.
-Were're going to flash the raspbian os onto the SD card. Make sure the SD card and os
+We're going to flash the raspbian os onto the SD card. Make sure the SD card and os
 are selected, then Flash.
 Now remove and re-insert the SD card.
 Open the wpa_supplicant.conf file and edit the contents of ssid and psk with the name
