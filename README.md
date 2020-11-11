@@ -28,7 +28,8 @@ ISO 3166 alpha-2 country code of your country if necessary. When done save.
 If the country code had to be changed edit inside the Vogelkast folder inside installconfig
 the hostapd.conf file's country_code line to match.
 This one isn't required but for extra security edit the wpa_passphrase in hostapd.conf
-and change the password to you're liking, if not the default password is Anno20202021.
+and change the password to you're liking, if not the default password for the wireless
+acces-point is Anno20202021.
 
 Open the SD card in the file explorer, then paste the ssh and wpa_supplicant.conf files
 inside. Eject the SD card.
