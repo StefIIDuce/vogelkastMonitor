@@ -81,18 +81,18 @@ def meet_temp():
 		if dp != sect: #Als het uur verschilt van de laatste meting.
 			#Nu kan de temperatuur meting gemaakt worden.
 			hum, temp = DHT.read_retry(tempsens, 4) #Meet temperatuur en luchtvochtigheid.
-			#hum2, temp2 = DHT.read_retry(tempsens, 18) #Meet temperatuur en luchtvochtigheid. #1
+			hum2, temp2 = DHT.read_retry(tempsens, 18) #Meet temperatuur en luchtvochtigheid. #1
 			tempf = temp * 9/5.0 + 32 #Zet temperatuur om naar Fahrenheit.
-			#tempf2 = temp2 * 9/5.0 + 32 #Zet temperatuur om naar Fahrenheit. #1
+			tempf2 = temp2 * 9/5.0 + 32 #Zet temperatuur om naar Fahrenheit. #1
 			hum = str(hum) #Verander de metingen naar strings.
 			temp = str(temp)
 			tempf = str(tempf)
-			#hum2 = str(hum2) #1
-			#temp2 = str(temp2) #1
-			#tempf2 = str(tempf2) #1
+			hum2 = str(hum2) #1
+			temp2 = str(temp2) #1
+			tempf2 = str(tempf2) #1
 			#Maak de string inhoud voor temptlog.
-			temptxt = tempT+ "Temp: " +temp+ "°C  " +tempf+ "F\nHum:  " +hum+ "%\n\n" #2
-			#temptxt = tempT+ "Binnen:\n  Temp: " +temp+ "°C  " +tempf+ "F\n  Hum:  " +hum+ "%\nBuiten:\n  Temp: " +temp2+ "°C  " +tempf2+ "F\n  Hum:  " +hum2+ "%\n\n" #1
+			#temptxt = tempT+ "Temp: " +temp+ "°C  " +tempf+ "F\nHum:  " +hum+ "%\n\n" #2
+			temptxt = tempT+ "Binnen:\n  Temp: " +temp+ "°C  " +tempf+ "F\n  Hum:  " +hum+ "%\nBuiten:\n  Temp: " +temp2+ "°C  " +tempf2+ "F\n  Hum:  " +hum2+ "%\n\n" #1
 			#Update inhoud variabelen en temperatuur log file.
 			fb = open('/home/pi/vogelkast_log/templog.txt', 'a')
 			fb.write(temptxt) #Schrijf de temptxt inhoud in de templog.txt file.
@@ -111,18 +111,18 @@ def meet_temp():
 			if dp != sect:
 				#Nu kan de temperatuur meting gemaakt worden.
 				hum, temp = DHT.read_retry(tempsens, 4)
-				#hum2, temp2 = DHT.read_retry(tempsens, 18) #1
+				hum2, temp2 = DHT.read_retry(tempsens, 18) #1
 				tempf = temp * 9/5.0 + 32
-				#tempf2 = temp2 * 9/5.0 + 32 #1
+				tempf2 = temp2 * 9/5.0 + 32 #1
 				hum = str(hum)
 				temp = str(temp)
 				tempf = str(tempf)
-				#hum2 = str(hum2) #1
-				#temp2 = str(temp2) #1
-				#tempf2 = str(tempf2) #1
+				hum2 = str(hum2) #1
+				temp2 = str(temp2) #1
+				tempf2 = str(tempf2) #1
 				#Maak de string inhoud voor temptlog.
-				temptxt = tempT+ "Temp: " +temp+ "°C  " +tempf+ "F\nHum:  " +hum+ "%\n\n" #2
-				#temptxt = tempT+ "Binnen:\n  Temp: " +temp+ "°C  " +tempf+ "F\n  Hum:  " +hum+ "%\nBuiten:\n  Temp: " +temp2+ "°C  " +tempf2+ "F\n  Hum:  " +hum2+ "%\n\n" #1
+				#temptxt = tempT+ "Temp: " +temp+ "°C  " +tempf+ "F\nHum:  " +hum+ "%\n\n" #2
+				temptxt = tempT+ "Binnen:\n  Temp: " +temp+ "°C  " +tempf+ "F\n  Hum:  " +hum+ "%\nBuiten:\n  Temp: " +temp2+ "°C  " +tempf2+ "F\n  Hum:  " +hum2+ "%\n\n" #1
 				#Update inhoud variabelen en temperatuur log file.
 				fb = open('/home/pi/vogelkast_log/templog.txt', 'a')
 				fb.write(temptxt)
