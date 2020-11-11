@@ -7,10 +7,11 @@ setup is complete and only the software installation is left.
 For more information regarding the installation and build of systems software
 and hardware components consult the Wiki tab above.
 
-The main Code tab above contains only 1 one folder and two files.
+The main Code tab above contains only 1 one folder, two files and two png's.
 The folder contains the installation script, configuration files, main programmes
 and necessary libraries.
 The two files are for the RPi os.
+The two png's show the setup of the hardware.
 
 The first thing that must be done is downloading the raspbian os from the following link:
 https://www.raspberrypi.org/downloads/raspberry-pi-os/
